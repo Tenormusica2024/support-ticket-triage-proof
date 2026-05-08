@@ -1,0 +1,10 @@
+{
+  "urgent_threshold": 16,
+  "backlog_threshold": 7,
+  "score_weights": {
+    "urgency": 2,
+    "impact": 3
+  },
+  "categories": ["urgent", "needs_reply", "backlog", "blocked", "no_action"],
+  "safety": "sample-first / no-comment / no-label-change / confirmation-required"
+}

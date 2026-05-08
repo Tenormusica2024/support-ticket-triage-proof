@@ -1,0 +1,154 @@
+{
+  "summary": {
+    "tickets_scanned": 5,
+    "counts": {
+      "urgent": 1,
+      "needs_reply": 1,
+      "backlog": 1,
+      "blocked": 1,
+      "no_action": 1
+    },
+    "confirmation_queue_count": 2,
+    "reply_draft_count": 3,
+    "safety": "sample-first / no-comment / no-label-change / confirmation-required"
+  },
+  "items": [
+    {
+      "ticket": {
+        "id": "ticket-001",
+        "source": "support_portal",
+        "title": "Cannot access monthly report",
+        "received_at": "2026-05-08T09:00:00Z"
+      },
+      "classification": {
+        "category": "urgent",
+        "severity": "high",
+        "score": 22,
+        "reason": "score=22 meets urgent threshold",
+        "recommended_action": "review_and_prepare_ticket_update",
+        "reply_draft_candidate": true,
+        "requires_external_update": true
+      }
+    },
+    {
+      "ticket": {
+        "id": "ticket-002",
+        "source": "support_portal",
+        "title": "Question about invoice format",
+        "received_at": "2026-05-08T09:20:00Z"
+      },
+      "classification": {
+        "category": "needs_reply",
+        "severity": "medium",
+        "score": 15,
+        "reason": "reply requested; draft only",
+        "recommended_action": "review_draft_before_reply",
+        "reply_draft_candidate": true,
+        "requires_external_update": false
+      }
+    },
+    {
+      "ticket": {
+        "id": "ticket-003",
+        "source": "feedback_form",
+        "title": "Feature request: export saved filters",
+        "received_at": "2026-05-08T10:00:00Z"
+      },
+      "classification": {
+        "category": "backlog",
+        "severity": "low",
+        "score": 11,
+        "reason": "score=11 is useful but not urgent",
+        "recommended_action": "add_to_backlog_after_review",
+        "reply_draft_candidate": false,
+        "requires_external_update": false
+      }
+    },
+    {
+      "ticket": {
+        "id": "ticket-004",
+        "source": "support_portal",
+        "title": "Migration request waiting for approval",
+        "received_at": "2026-05-08T11:00:00Z"
+      },
+      "classification": {
+        "category": "blocked",
+        "severity": "blocked",
+        "score": 23,
+        "reason": "Owner approval and maintenance window are required.",
+        "recommended_action": "confirm_blocker_before_update",
+        "reply_draft_candidate": true,
+        "requires_external_update": true
+      }
+    },
+    {
+      "ticket": {
+        "id": "ticket-005",
+        "source": "notification",
+        "title": "Weekly usage summary available",
+        "received_at": "2026-05-08T12:00:00Z"
+      },
+      "classification": {
+        "category": "no_action",
+        "severity": "none",
+        "score": 5,
+        "reason": "low score and no reply requested",
+        "recommended_action": "no_external_update",
+        "reply_draft_candidate": false,
+        "requires_external_update": false
+      }
+    }
+  ],
+  "confirmation_queue": [
+    {
+      "id": "3eb004cc2395",
+      "source": "support_portal",
+      "ticket_id": "ticket-001",
+      "title": "Cannot access monthly report",
+      "reason": "score=22 meets urgent threshold",
+      "recommended_action": "review_and_prepare_ticket_update",
+      "created_at": "2026-05-08T09:00:00Z"
+    },
+    {
+      "id": "cebb3bbb6331",
+      "source": "support_portal",
+      "ticket_id": "ticket-004",
+      "title": "Migration request waiting for approval",
+      "reason": "Owner approval and maintenance window are required.",
+      "recommended_action": "confirm_blocker_before_update",
+      "created_at": "2026-05-08T11:00:00Z"
+    }
+  ],
+  "reply_drafts": [
+    {
+      "ticket_id": "ticket-001",
+      "draft": {
+        "draft_only": true,
+        "send_ready": false,
+        "title": "Re: Cannot access monthly report",
+        "body": "Thank you for the report. We have flagged this for human review because it may affect active work.\n\nBefore any ticket update is posted, a reviewer should confirm the affected account, impact, and next action.",
+        "safety_note": "This is a draft-only suggestion. Review before any external update."
+      }
+    },
+    {
+      "ticket_id": "ticket-002",
+      "draft": {
+        "draft_only": true,
+        "send_ready": false,
+        "title": "Re: Question about invoice format",
+        "body": "Thank you for the question. We have prepared this as a draft response for review.\n\nA reviewer should confirm the details before replying or updating the ticket.",
+        "safety_note": "This is a draft-only suggestion. Review before any external update."
+      }
+    },
+    {
+      "ticket_id": "ticket-004",
+      "draft": {
+        "draft_only": true,
+        "send_ready": false,
+        "title": "Re: Migration request waiting for approval",
+        "body": "Thank you for the request. This is currently blocked because additional approval or missing information is required.\n\nA reviewer should confirm the blocker before any external update is made.",
+        "safety_note": "This is a draft-only suggestion. Review before any external update."
+      }
+    }
+  ]
+}

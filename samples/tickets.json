@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ticket-001",
+    "source": "support_portal",
+    "title": "Cannot access monthly report",
+    "body": "The report page returns an error for my account and I need it for today's review.",
+    "customer_tier": "standard",
+    "urgency": 5,
+    "impact": 4,
+    "requires_reply": true,
+    "requires_external_update": true,
+    "blocked": false,
+    "received_at": "2026-05-08T09:00:00Z"
+  },
+  {
+    "id": "ticket-002",
+    "source": "support_portal",
+    "title": "Question about invoice format",
+    "body": "Could you confirm whether the invoice can include a department code?",
+    "customer_tier": "standard",
+    "urgency": 3,
+    "impact": 3,
+    "requires_reply": true,
+    "requires_external_update": false,
+    "blocked": false,
+    "received_at": "2026-05-08T09:20:00Z"
+  },
+  {
+    "id": "ticket-003",
+    "source": "feedback_form",
+    "title": "Feature request: export saved filters",
+    "body": "It would be helpful if saved filters could be exported for team onboarding.",
+    "customer_tier": "standard",
+    "urgency": 1,
+    "impact": 3,
+    "requires_reply": false,
+    "requires_external_update": false,
+    "blocked": false,
+    "received_at": "2026-05-08T10:00:00Z"
+  },
+  {
+    "id": "ticket-004",
+    "source": "support_portal",
+    "title": "Migration request waiting for approval",
+    "body": "Please start the workspace migration after the owner approves the maintenance window.",
+    "customer_tier": "premium",
+    "urgency": 4,
+    "impact": 5,
+    "requires_reply": true,
+    "requires_external_update": true,
+    "blocked": true,
+    "blocker_reason": "Owner approval and maintenance window are required.",
+    "received_at": "2026-05-08T11:00:00Z"
+  },
+  {
+    "id": "ticket-005",
+    "source": "notification",
+    "title": "Weekly usage summary available",
+    "body": "Your weekly usage summary is ready for review.",
+    "customer_tier": "standard",
+    "urgency": 1,
+    "impact": 1,
+    "requires_reply": false,
+    "requires_external_update": false,
+    "blocked": false,
+    "received_at": "2026-05-08T12:00:00Z"
+  }
+]

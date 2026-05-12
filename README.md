@@ -2,6 +2,8 @@
 
 A public-safe proof slice for an AI secretary that triages support-ticket-like inputs without updating any external ticket system.
 
+![Support Ticket Triage Proof: sample tickets to draft-only replies and human confirmation](docs/assets/support-ticket-triage-proof-hero.png)
+
 ## One-minute summary
 
 This repository demonstrates a practical AI-secretary pattern:
